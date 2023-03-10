@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
  * Route handling
  */
 app.get('/', (req, res) => {
-  res.render('todo');
+  res.render('todo', { todoItems: todoItems });
 })
 
 app.post('/', (req, res) => {

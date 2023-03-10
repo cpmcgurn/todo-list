@@ -18,10 +18,16 @@
       <div class="todo__header">
         <h2 class="heading--secondary">What will you do today?</h2>
       </div>
-      <!-- <p class="todo__no-item">You have nothing planned for today...</p> -->
-      <!-- <ul class="todo__list">
-        <li class="todo__item">Item 1</li>
-      </ul> -->
+ 
+      <% if (!todoItems.length) { %>
+        <p class="todo__no-item">You have nothing planned for today.</p>
+	<% } else { %>
+	<ul class="todo__list">
+		<% todoItems.forEach((todoItem) => { %>
+	<li class="todo__item"><%= todoItem %></li>
+	<% }); %>
+	</ul>
+	<% } %>
 
       <div class="todo__add-new">
         <form class="form" action="/" method="post">

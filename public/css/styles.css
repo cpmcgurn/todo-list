@@ -118,9 +118,9 @@ body {
   color: #EDF1D6;
   padding: 15px 20px;
   cursor: pointer;
-  transition: all .3s;
 }
 
 .btn:hover {
   background-color: #4c7c51;
+  transition: background-color .3s;
 }

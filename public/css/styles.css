@@ -23,6 +23,8 @@ body {
 
 .heading {
   color: #9DC08B;
+  font-size: 4rem;
+  text-decoration: none;
 }
 
 .heading--secondary {
